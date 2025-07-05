@@ -1,0 +1,17 @@
+digraph "CFG for 'sum' function" {
+    label="Control Flow Graph for function: sum";
+    labelloc=top;
+    fontsize=18;
+
+    entry [label="entry: \nstore n, s=0, i=0\nbr %5", shape=box, style=filled, fillcolor=lightblue];
+    cond [label="%5: \nload i, load n\nicmp i < n\nbr %9 or %16", shape=box, style=filled, fillcolor=lightblue];
+    body [label="%9: \nload i, load s\ns += i\nbr %13", shape=box, style=filled, fillcolor=lightyellow];
+    increment [label="%13: \ni++\nbr %5", shape=box, style=filled, fillcolor=lightyellow];
+    exit [label="%16: \nreturn s", shape=box, style=filled, fillcolor=lightgreen];
+
+    entry -> cond;
+    cond -> body [label="true"];
+    cond -> exit [label="false"];
+    body -> increment;
+    increment -> cond;
+}
