@@ -48,7 +48,7 @@ clang++ -O0 -S -emit-llvm src/loop.cpp -o ir/loop.ll
 clang++ -O0 -S -emit-llvm src/switch.cpp -o ir/switch.ll
 ```
 2. Analyze IR Files
-Open .ll files in your preferred editor and observe:
+  Open .ll files in your preferred editor and observe:
 * icmp → comparisons
 * br → conditional/unconditional branches
 * phi → value selection across control flow (seen with optimization)
