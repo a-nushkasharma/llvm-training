@@ -17,7 +17,7 @@ llvm-training/
 │ ├── loop.ll
 │ └── switch.ll
 ├── notes/ # Documentation deliverables
-│ ├── control-flow.md # Annotated IR + analysis (submission)
+│ ├── control-flow.pdf # Final deliverable
 ├── loop_cfg.png # CFG diagram of the loop function
 ├── loop_cfg.dot# dot file for CFG diagram of the loop function
 ```
