@@ -19,7 +19,7 @@ llvm-training/
 ├── notes/ # Documentation deliverables
 │ ├── control-flow.pdf # Final deliverable
 ├── loop_cfg.png # CFG diagram of the loop function
-├── loop_cfg.dot# dot file for CFG diagram of the loop function
+├── loop_cfg.dot # dot file for CFG diagram of the loop function
 ```
 ---
 ## Prerequisites
